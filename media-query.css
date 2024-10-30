@@ -1,0 +1,562 @@
+@media (max-width: 900px) {
+  .main-container-home {
+    width: 100%;
+  }
+  .main-container-home .search-place-nav {
+    display: none;
+  }
+  .main-container-home .search-nav-container2 {
+    display: block;
+  }
+
+  .guests-input-search-rooms {
+    width: 150px;
+  }
+  .place-overviews-desc,
+  .place-overviews-desc2,
+  .place-overviews-desc3 {
+    font-size: 16px;
+  }
+  .overview-place {
+    height: 600px;
+  }
+  .map-section {
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+  }
+  .map-section img {
+    height: 300px;
+  }
+  .icon-text-area-explore {
+    width: 100%;
+  }
+  .map-section h2 {
+    top: -65px;
+  }
+  .place-photos {
+    flex-direction: column;
+  }
+  .big-photo-place {
+    width: 100%;
+    height: 350px;
+  }
+  .small-photos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .small-photo-place {
+    margin-top: 10px;
+    width: calc(50% - 10px);
+  }
+  .small-photo-place1 {
+    width: calc(50% - 10px);
+  }
+  .blue-box-promo img {
+    width: 25%;
+  }
+  .inspiration-article1,
+  .inspiration-article2,
+  .inspiration-article3 {
+    width: 350px;
+    height: 280px;
+  }
+  .p-inspiration {
+    display: block;
+  }
+  .h2-inspiration {
+    top: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .room-card-place-ditales {
+    width: calc(50% - 3px);
+  }
+  .room-card-place-ditales h2 {
+    font-size: 17px;
+    left: 9px;
+  }
+  .down-banner h1 {
+    font-size: 24px;
+  }
+  .banner-qoute {
+    top: 160px;
+    width: 60%;
+    font-size: 20px;
+    top: 200px;
+  }
+  .banner-section h1 {
+    top: 92px;
+    font-size: 26px;
+    left: 55%;
+  }
+}
+@media (max-width: 1017px) {
+  .inspiration-article1,
+  .inspiration-article2,
+  .inspiration-article3 {
+    width: 295px;
+    height: 260px;
+  }
+}
+@media (max-width: 1017px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-logo {
+    left: 30px;
+  }
+  .sidebar-burger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .sign-in-sidebar,
+  .register-sidebar {
+    display: block;
+  }
+  .sign-in-btn,
+  .register-btn {
+    display: none;
+  }
+  .over-view-heading {
+    left: 10px;
+  }
+  .left-arrow-place,
+  .right-arrow-place {
+    display: block;
+  }
+  .small-photos {
+    display: none;
+  }
+  .big-photo-place {
+    height: 300px;
+  }
+  .overview-place {
+    width: 100%;
+  }
+  .place-overviews-desc {
+    left: 10px;
+  }
+  .place-overviews-desc2 {
+    left: 10px;
+  }
+  .place-overviews-desc3 {
+    left: 10px;
+  }
+  .facilites-blocks {
+    width: 55%;
+    font-size: 14px;
+    left: 7px;
+  }
+  .facilites-text {
+    margin-left: 5px;
+  }
+  .filter-button {
+    padding: 10px 10px;
+  }
+
+  .blue-box-promo-text {
+    font-size: 20px;
+    top: 100px;
+  }
+  .discount-blue-box-promo {
+    top: 60px;
+  }
+  .blue-box-promo img {
+    display: none;
+  }
+
+  .blue-box-promo .nav-logo {
+    top: 7%;
+    left: 28px;
+  }
+  .room-card-place-ditales {
+    height: 350px;
+    width: 55%;
+  }
+  .room-card-place-ditales img {
+    height: 130px;
+  }
+  .room-card-place-ditales h2 {
+    font-size: 13px;
+    top: 100px;
+    left: 10px;
+  }
+  .facilites-room-card {
+    top: 190px;
+    font-size: 12px;
+    width: 70px;
+    left: 10px;
+  }
+  .facilites-text {
+    width: 95px;
+  }
+  .room-card-place-ditales button {
+    height: 35px;
+    top: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-section {
+    height: 300px;
+  }
+  .banner-qoute {
+    width: 80%;
+    font-size: 16px;
+    top: 55%;
+  }
+  .banner-section h1 {
+    font-size: 20px;
+    width: 236px;
+  }
+  .search-place-nav-responsive {
+    width: 240px;
+    height: 280px;
+  }
+  .search-place-form-responsive input {
+    width: 180px;
+    height: 32px;
+  }
+
+  .search-nav-btn1 {
+    width: 120px;
+    height: 30px;
+  }
+  .search-place-form-responsive {
+    gap: -20px;
+  }
+  .covid-restrictions-warning {
+    height: 100px;
+  }
+  .flex-countries {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .choose-country-section-article-img {
+    width: 110%;
+    height: 200px;
+  }
+  .inspiration-article1,
+  .inspiration-article2,
+  .inspiration-article3 {
+    width: 295px;
+    height: 260px;
+  }
+  .inspiration-article1 p,
+  .inspiration-article2 p,
+  .inspiration-article3 p {
+    top: 150px;
+    font-size: 16;
+  }
+  .inspiration-article1 h2,
+  .inspiration-article2 h2,
+  .inspiration-article3 h2 {
+    top: 60px;
+    font-size: 18px;
+  }
+  .under-sign-up-lines {
+    width: 80px;
+  }
+  .main-container-sign-up,
+  .main-container-sign-in,
+  .main-container-check-inbox,
+  .main-container-create-pw {
+    width: 90%;
+  }
+  .inbox-photo-container {
+    height: 95%;
+  }
+  .inbox-photo {
+    width: calc(100% - 50px);
+    height: calc(100% - 25px);
+  }
+}
+
+@media (max-width: 1500px) {
+  .main-container-home .search-place-form {
+    width: 70%;
+  }
+  .main-container-home .search-place-form .guests-input-search {
+    width: 150px;
+  }
+  .main-container-home .search-place-form input {
+    width: 90%;
+  }
+  .search-nav-btn2 {
+    right: 15%;
+  }
+}
+@media (max-width: 1200px) {
+  .search-nav-btn2 {
+    width: 120px;
+  }
+}
+@media (max-width: 1100px) {
+  .choose-country-section {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flex-countries {
+    width: 100%;
+  }
+}
+@media (max-width: 1075px) {
+  .search-place-form input {
+    width: 80%;
+  }
+
+  .search-nav-btn2 {
+    width: 15%;
+  }
+  .search-nav-container {
+    width: 100%;
+  }
+  .search-place-form p {
+    font-size: 8px;
+  }
+  .main-container-search-results {
+    width: 100%;
+  }
+}
+@media (max-width: 685px) {
+  .section1-enjoy-vacation p {
+    width: 500px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 350px) {
+  .section1-enjoy-vacation p {
+    width: 500px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 400px) {
+  .section1-enjoy-vacation p {
+    width: 80%;
+  }
+  .down-banner h1 {
+    font-size: 16px;
+    width: 250px;
+  }
+  /* .room-card-place-ditales{
+    width: ;
+  } */
+}
+
+@media (max-width: 685px) and (min-width: 550px) {
+  .inspiration-article1,
+  .inspiration-article2,
+  .inspiration-article3 {
+    width: 430px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 685px) and (min-width: 550px) {
+  .popular-section-article1 img,
+  .popular-section-article2 img,
+  .popular-section-article3 img,
+  .popular-section-article4 img {
+    width: 505px;
+    height: 400px;
+  }
+}
+@media (max-width: 350px) {
+  .popular-section-article1 img,
+  .popular-section-article2 img,
+  .popular-section-article3 img,
+  .popular-section-article4 img {
+    width: 280px;
+    height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .explore-dream-place h1 {
+    width: 110%;
+  }
+}
+
+@media (max-width: 750px) {
+  .down-banner h1 {
+    font-size: 22px;
+    width: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .down-banner h1 {
+    left: 30px;
+    font-size: 22px;
+    width: 320px;
+  }
+  .down-banner button {
+    left: 30px;
+  }
+  .small-photo-place {
+    width: calc(50% - 2px);
+  }
+  .small-photo-place1 {
+    width: calc(50% - 2px);
+  }
+  .place-overviews-desc,
+  .place-overviews-desc2,
+  .place-overviews-desc3 {
+    font-size: 14px;
+  }
+  .main-container-place-details {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .place-title-overview {
+    width: 100%;
+  }
+  .overview-place {
+    height: 750px;
+  }
+  .place-overviews-desc {
+    top: 8%;
+    left: 30px;
+  }
+  .place-overviews-desc2 {
+    top: 24%;
+    left: 30px;
+  }
+  .place-overviews-desc3 {
+    top: 53%;
+    left: 30px;
+  }
+  .map-section {
+    width: 100%;
+    font-size: 14px;
+  }
+  .map-section img {
+    height: 250px;
+  }
+  .room-card-place-ditales {
+    height: 375px;
+  }
+  .room-card-place-ditales h2 {
+    font-size: 14px;
+    top: 170px;
+    left: 10px;
+  }
+  .facilites-room-card {
+    top: 240px;
+    font-size: 14px;
+    left: 10px;
+  }
+  .room-card-place-ditales button {
+    top: 325px;
+  }
+
+  .icon-text-area-explore {
+    width: 100%;
+  }
+  .blue-box-promo {
+    width: 100%;
+  }
+  .overview-place {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .down-banner h1 {
+    font-size: 16px;
+    width: 200px;
+  }
+  .down-banner {
+    margin-bottom: 60%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .main-container-place-details {
+    width: calc(100% - 25px);
+  }
+  .overview-place {
+    width: calc(100vw - 85px);
+  }
+  .place-ditales-map {
+    flex-direction: column;
+  }
+  .map-section {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .map-section h2 {
+    position: absolute;
+    top: -30%;
+  }
+  .main-container-place-details .search-place-form {
+    width: calc(100% - 290px);
+  }
+  .main-container-place-details .search-place-form input {
+    width: 200px;
+  }
+  .main-container-search-results {
+    flex-direction: column;
+  }
+  .results-home-container {
+    width: 100%;
+  }
+  .filter-aside {
+    display: none;
+  }
+  .filter-responsive {
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .section1-enjoy-vacation p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-place-details-content {
+    width: 93%;
+    justify-content: space-between;
+  }
+  .blue-box-promo {
+    margin-bottom: 20px;
+  }
+  .room-card-place-ditales {
+    width: 49%;
+    margin-bottom: 25px;
+  }
+  .blue-box-promo {
+    width: 100%;
+  }
+  .blue-box-promo img {
+    width: 25%;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 70%;
+  }
+  .blue-box-promo p {
+    font-size: 30px;
+    width: 76%;
+  }
+  .header-place-details-content .nav-logo {
+    left: 45px;
+  }
+  .notifications-profile-photo {
+    right: 10px;
+  }
+  .main-container-place-details .search-place-form {
+    width: calc(100% - 240px);
+  }
+  .main-container-place-details .search-place-form input {
+    width: 150px;
+  }
+}

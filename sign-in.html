@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="media-query.css" />
+    <link rel="icon" href="imgs/home-tab.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Log in for to find a home that suits you!"
+    />
+    <title>Sign in</title>
+  </head>
+
+  <body>
+    <div class="main-container-home">
+      <header class="header-nav">
+        <aside class="sidebar">
+          <div class="sidebar-container">
+            <div>
+              <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="links">
+              <li class="home-sidebar">
+                <a a href="index.html" class="home">Home</a>
+              </li>
+              <li class="discover-sidebar">
+                <a href="" class="discover">Discover</a>
+              </li>
+              <li class="activties-sidebar">
+                <a href="" class="activties">Activties</a>
+              </li>
+              <li class="about-sidebar">
+                <a href="" class="about">About</a>
+              </li>
+              <li class="contact-sidebar">
+                <a href="" class="contact">Contact</a>
+              </li>
+              <li class="register-sidebar">
+                <a href="sign-up.html" class="register">Register</a>
+              </li>
+              <li class="sign-in-sidebar">
+                <a href="sign-in.html" class="sign-in">Sign-in</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <button class="sidebar-burger-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-logo">
+          <a href="index.html">
+            <svg
+              class="website-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+                fill="#2F80ED"
+              />
+            </svg>
+          </a>
+          <a href="index.html"><p class="inline">Your home</p></a>
+        </div>
+      </header>
+    </div>
+
+    <main class="main-container-sign-in">
+      <section class="sign-up-section">
+        <h1>Sign in</h1>
+        <form class="form-sign-in">
+          <label class="label-email-box">Email address</label>
+          <input class="text-box-email-signin" type="text" placeholder="" />
+          <label class="label-password-box"> Password </label>
+          <svg
+            class="eye-password"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+          >
+            <path
+              d="M12.9833 10.5C12.9833 12.15 11.6499 13.4833 9.99993 13.4833C8.34993 13.4833 7.0166 12.15 7.0166 10.5C7.0166 8.85 8.34993 7.51666 9.99993 7.51666C11.6499 7.51666 12.9833 8.85 12.9833 10.5Z"
+              stroke="#4F4F4F"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.99987 17.3916C12.9415 17.3916 15.6832 15.6583 17.5915 12.6583C18.3415 11.4833 18.3415 9.50831 17.5915 8.33331C15.6832 5.33331 12.9415 3.59998 9.99987 3.59998C7.0582 3.59998 4.31654 5.33331 2.4082 8.33331C1.6582 9.50831 1.6582 11.4833 2.4082 12.6583C4.31654 15.6583 7.0582 17.3916 9.99987 17.3916Z"
+              stroke="#4F4F4F"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <input class="text-box-password" type="password" placeholder="" />
+          <div class="passowrd-line hide-password-line"></div>
+          <!-- warning signin textbox -->
+          <div class="warning-signin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20"
+              height="20"
+              x="0"
+              y="0"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="M256 0C114.497 0 0 114.507 0 256c0 141.503 114.507 256 256 256 141.503 0 256-114.507 256-256C512 114.497 397.493 0 256 0zm0 472c-119.393 0-216-96.615-216-216 0-119.393 96.615-216 216-216 119.393 0 216 96.615 216 216 0 119.393-96.615 216-216 216z"
+                  fill="#FFF"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+                <path
+                  d="M256 128.877c-11.046 0-20 8.954-20 20V277.67c0 11.046 8.954 20 20 20s20-8.954 20-20V148.877c0-11.046-8.954-20-20-20z"
+                  fill="#fff"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+                <circle
+                  cx="256"
+                  cy="349.16"
+                  r="27"
+                  fill="#fff"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></circle>
+              </g>
+            </svg>
+            <p>Please re-enter your email</p>
+          </div>
+
+          <div class="warning-signin-pw">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20"
+              height="20"
+              x="0"
+              y="0"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="M256 0C114.497 0 0 114.507 0 256c0 141.503 114.507 256 256 256 141.503 0 256-114.507 256-256C512 114.497 397.493 0 256 0zm0 472c-119.393 0-216-96.615-216-216 0-119.393 96.615-216 216-216 119.393 0 216 96.615 216 216 0 119.393-96.615 216-216 216z"
+                  fill="#FFF"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+                <path
+                  d="M256 128.877c-11.046 0-20 8.954-20 20V277.67c0 11.046 8.954 20 20 20s20-8.954 20-20V148.877c0-11.046-8.954-20-20-20z"
+                  fill="#fff"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+                <circle
+                  cx="256"
+                  cy="349.16"
+                  r="27"
+                  fill="#fff"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></circle>
+              </g>
+            </svg>
+            <p>Please re-enter your password</p>
+          </div>
+        </form>
+
+        <div class="keepme-sign-in-forgot">
+          <div class="keepme-sign-in">
+            <div class="keepme-sign-in-box"></div>
+            <p>Keep me signed in</p>
+          </div>
+          <a href="forgot-pw.html"
+            ><button class="forgot-btn">Forgot password?</button></a
+          >
+        </div>
+
+        <a class="btn-sign-in" href="index.html"
+          ><button class="sign-in-button">Continue with email</button></a
+        >
+
+        <div class="flex-2lines-text">
+          <div class="under-sign-up-lines"></div>
+          <p class="text-between-lines">or use one of these options</p>
+          <div class="under-sign-up-lines"></div>
+        </div>
+        <button class="sign-in-google-button">
+          <img src="imgs/google-icon.png" />Continue with Google
+        </button>
+        <button class="sign-in-facebook-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="20"
+            viewBox="0 0 21 20"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_4_993)">
+              <path
+                d="M17.8048 0H3.19504C1.70664 0 0.5 1.20659 0.5 2.69504V17.3049C0.5 18.7933 1.70659 19.9999 3.19504 19.9999H10.4005L10.4128 12.853H8.55602C8.31472 12.853 8.11887 12.6579 8.11794 12.4166L8.10904 10.1129C8.10811 9.87025 8.30454 9.67308 8.54716 9.67308H10.4005V7.44709C10.4005 4.86384 11.9782 3.45724 14.2827 3.45724H16.1736C16.4155 3.45724 16.6117 3.65339 16.6117 3.89537V5.83789C16.6117 6.07978 16.4157 6.27587 16.1739 6.27602L15.0134 6.27655C13.7602 6.27655 13.5175 6.87207 13.5175 7.74602V9.67313H16.2713C16.5337 9.67313 16.7372 9.90225 16.7063 10.1628L16.4333 12.4666C16.4071 12.687 16.2202 12.8531 15.9982 12.8531H13.5298L13.5175 20H17.8049C19.2933 20 20.4999 18.7934 20.4999 17.305V2.69504C20.4998 1.20659 19.2932 0 17.8048 0Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_993">
+                <rect
+                  width="20"
+                  height="20"
+                  fill="white"
+                  transform="translate(0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          Continue with Facebook
+        </button>
+
+        <div class="sign-up-instaed">
+          <p>Don't have an account?</p>
+          <a href="sign-up.html"
+            ><button class="sign-up-sign-in-page">Register</button></a
+          >
+        </div>
+      </section>
+    </main>
+    <script src="commonFeatures.js"></script>
+    <script src="signIn.js"></script>
+  </body>
+</html>

@@ -18,32 +18,76 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="media-query.css" />
+    <link rel="icon" href="imgs/home-tab.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Best place to find a home that suits you!"
+    />
     <title>Your home</title>
   </head>
   <body>
     <!-- start of main content -->
-    <main class="main-container">
+    <main class="main-container-home">
       <!-- start of header section -->
       <header>
-        <nav class="header-nav">
+        <!-- burger menu sidebar for responsive screens -->
+
+        <aside class="sidebar">
+          <div class="sidebar-container">
+            <div>
+              <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="links">
+              <li class="home-sidebar">
+                <a a href="index.html" class="home">Home</a>
+              </li>
+              <li class="discover-sidebar">
+                <a href="" class="discover">Discover</a>
+              </li>
+              <li class="activties-sidebar">
+                <a href="" class="activties">Activties</a>
+              </li>
+              <li class="about-sidebar">
+                <a href="" class="about">About</a>
+              </li>
+              <li class="contact-sidebar">
+                <a href="" class="contact">Contact</a>
+              </li>
+              <li class="register-sidebar">
+                <a href="sign-up.html" class="register">Register</a>
+              </li>
+              <li class="sign-in-sidebar">
+                <a href="sign-in.html" class="sign-in">Sign-in</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- burger menu sidebar for responsive screens -->
+        <nav class="header-nav" style="display: none">
+          <button class="sidebar-burger-menu">
+            <i class="fas fa-bars"></i>
+          </button>
           <!-- logo and title -->
           <div class="nav-logo">
-            <svg
-              class="website-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
-                fill="#2F80ED"
-              />
-            </svg>
-            <h4 class="inline">Your home</h4>
+            <a href="index.html">
+              <svg
+                class="website-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+                  fill="#2F80ED"
+                />
+              </svg>
+            </a>
+            <a href="index.html"><p class="inline">Your home</p></a>
           </div>
 
           <!-- navbar links -->
@@ -59,10 +103,101 @@
 
           <!-- navbar new account buttons -->
           <div class="nav-btns">
-            <button class="register-btn">Register</button>
-            <button class="sign-in-btn">Sign in</button>
+            <a href="sign-up.html"
+              ><button class="register-btn">Register</button></a
+            >
+            <a href="sign-in.html"
+              ><button class="sign-in-btn">Sign in</button></a
+            >
           </div>
         </nav>
+        <!--  -->
+        <!-- login navbar -->
+        <!--  -->
+        <nav class="header-nav-login">
+          <button class="sidebar-burger-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- logo and title -->
+          <div class="nav-logo">
+            <a href="index.html">
+              <svg
+                class="website-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+                  fill="#2F80ED"
+                />
+              </svg>
+            </a>
+            <a href="index.html"><p class="inline">Your home</p></a>
+          </div>
+
+          <!-- navbar links -->
+          <div class="nav-links">
+            <ul class="nav-bar-link-list">
+              <li><a href="index.html">Home</a></li>
+              <li class="nav-link"><a href="">Discover</a></li>
+              <li class="nav-link"><a href="">Activties</a></li>
+              <li class="nav-link"><a href="">About</a></li>
+              <li class="nav-link"><a href="">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- navbar new account buttons -->
+          <div class="notifications-profile-photo">
+            <svg
+              class="notifications-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82004C17.9387 7.70407 17.6216 6.61125 17.0252 5.66801C16.4288 4.72477 15.5776 3.96966 14.5699 3.49004C14.3128 3.03338 13.9376 2.65418 13.4838 2.39207C13.0299 2.12997 12.514 1.99457 11.9899 2.00004C10.8999 2.00004 9.91994 2.59004 9.39994 3.52004C7.44994 4.49004 6.09994 6.50004 6.09994 8.82004V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z"
+                fill="#2f80ed"
+              />
+              <path
+                d="M14.8302 20.01C14.6199 20.5922 14.2355 21.0954 13.7291 21.4515C13.2228 21.8075 12.6191 21.999 12.0002 22C11.2102 22 10.4302 21.68 9.88018 21.11C9.56018 20.81 9.32018 20.41 9.18018 20C9.31018 20.02 9.44018 20.03 9.58018 20.05C9.81018 20.08 10.0502 20.11 10.2902 20.13C10.8602 20.18 11.4402 20.21 12.0202 20.21C12.5902 20.21 13.1602 20.18 13.7202 20.13C13.9302 20.11 14.1402 20.1 14.3402 20.07L14.8302 20.01Z"
+                fill="#2f80ed"
+              />
+              <circle
+                cx="17"
+                cy="6"
+                r="5"
+                fill="#EB5757"
+                stroke="none"
+                stroke-width="2"
+              />
+            </svg>
+            <img
+              class="user-profile-photo-nav"
+              src="imgs/user-profile-photo.png"
+              alt=""
+            />
+            <li class="dropdown-profile">
+              <ul class="op1">
+                <a href="">Your profile</a>
+              </ul>
+              <ul class="op2">
+                <a href="">Activites</a>
+              </ul>
+              <ul class="op3">
+                <a href="">Settings</a>
+              </ul>
+              <ul class="op4">
+                <a href="">Logout</a>
+              </ul>
+            </li>
+          </div>
+        </nav>
+        <!-- end of login navbar -->
       </header>
 
       <section class="banner-section">
@@ -72,13 +207,47 @@
           Plan and book our perfect trip with expert advice, travel tips,
           destination information and inspiration from us
         </p>
+      </section>
+      <!-- nav for searching a place -->
+      <div class="search-nav-container2">
+        <nav class="search-place-nav-responsive">
+          <form class="search-place-form-responsive">
+            <input
+              class="location-input-search"
+              type="text"
+              placeholder="Where to?"
+            />
+            <br />
+            <input
+              class="check-in-input-search"
+              type="date"
+              placeholder="Check-in date"
+            />
+            <br />
+            <input
+              class="check-out-input-search"
+              type="date"
+              placeholder="Check-out date"
+            />
+            <br />
+            <input
+              class="guests-input-search"
+              type="text"
+              placeholder="Guests"
+            />
+          </form>
+          <button class="search-nav-btn1">Search</button>
+        </nav>
+      </div>
+
+      <div class="search-nav-container">
         <nav class="search-place-nav">
           <form class="search-place-form">
             <label>
               <input
                 class="location-input-search"
                 type="text"
-                placeholder="Where are you going"
+                placeholder="Where to?"
               />
             </label>
             <br />
@@ -86,7 +255,7 @@
               <input
                 class="check-in-input-search"
                 type="text"
-                placeholder="Check in date"
+                placeholder="Check-in date"
               />
             </label>
             <br />
@@ -94,28 +263,21 @@
               <input
                 class="check-out-input-search"
                 type="text"
-                placeholder="Check out date"
+                placeholder="Check-out date"
               />
             </label>
             <br />
-            <label>
-              <input
-                class="guests-input-search"
-                type="text"
-                placeholder="Guests"
-              />
-            </label>
-            <label>
-              <input
-                class="search-nav-btn"
-                type="submit"
-                placeholder="Search"
-              />
-            </label>
+            <input
+              class="guests-input-search"
+              type="text"
+              placeholder="Guests"
+            />
           </form>
-
+          <a href="search-results.html"
+            ><button class="search-nav-btn2">Search</button>
+          </a>
         </nav>
-      </section>
+      </div>
 
       <div class="covid-restrictions-warning">
         <svg
@@ -168,85 +330,92 @@
 
       <!-- start of articles section -->
       <section class="choose-country-section">
-        <!-- start of article 1 -->
-        <article class="choose-country-section-article">
-          <img
-            class="choose-country-section-article-img"
-            src="imgs/article1-section1.jpeg"
-            alt=""
-          />
-          <h2>Australia</h2>
-          <p>2246 properties</p>
-        </article>
-        <!-- end of article 1 -->
+        <div class="flex-countries">
+          <!-- start of article 1 -->
+          <article class="choose-country-section-article article1 hidden">
+            <img
+              class="choose-country-section-article-img"
+              src="imgs/article1-section1.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <h2>Australia</h2>
+            <p>2246 properties</p>
+          </article>
+          <!-- end of article 1 -->
+          <!-- ------------------- -->
+          <!-- start of article 2 -->
+
+          <article class="choose-country-section-article article2 hidden">
+            <img
+              class="choose-country-section-article-img"
+              src="imgs/article2-section1.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <h2>Japan</h2>
+            <p>1278 properties</p>
+          </article>
+          <!-- end of article 2 -->
+        </div>
         <!-- ------------------- -->
-        <!-- start of article 2 -->
-        <article class="choose-country-section-article">
-          <img
-            class="choose-country-section-article-img"
-            src="imgs/article2-section1.jpeg"
-            alt=""
-          />
-          <h2>Japan</h2>
-          <p>1278 properties</p>
-        </article>
-        <!-- end of article 2 -->
-        <!-- ------------------- -->
-        <!-- start of article 3 -->
-        <article class="choose-country-section-article">
-          <img
-            class="choose-country-section-article-img"
-            src="imgs/article3-section1.jpeg"
-            alt=""
-          />
-          <h2>New Zealand</h2>
-          <p>480 properties</p>
-        </article>
-        <!-- end of article 3 -->
-        <!-- ------------------- -->
-        <!-- start of article 4 -->
-        <article class="choose-country-section-article">
-          <img
-            class="choose-country-section-article-img"
-            src="imgs/article4-section1.jpeg"
-            alt=""
-          />
-          <h2>Greece</h2>
-          <p>320 properties</p>
-        </article>
-        <!-- end of article 4 -->
+        <div class="flex-countries">
+          <!-- start of article 3 -->
+          <article class="choose-country-section-article article2 hidden">
+            <img
+              class="choose-country-section-article-img"
+              src="imgs/article3-section1.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <h2>New Zealand</h2>
+            <p>480 properties</p>
+          </article>
+          <!-- end of article 3 -->
+          <!-- ------------------- -->
+          <!-- start of article 4 -->
+          <article class="choose-country-section-article article3 hidden">
+            <img
+              class="choose-country-section-article-img"
+              src="imgs/article2-section3.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <h2>Greece</h2>
+            <p>320 properties</p>
+          </article>
+          <!-- end of article 4 -->
+        </div>
       </section>
       <!-- end of articles section -->
 
       <!-- start of inspiration section -->
       <h1 class="inspiration-heading">Get inspiration for your next trip</h1>
       <section class="inspiration-section">
-        <article class="inspiration-article1">
-          <div class="overlay"></div>
-          <div class="h2-inspiration">
-            <h2>Sydeny’s 10 most fashionable 5 star hotels</h2>
-          </div>
-          <p>
+        <article class="inspiration-article1 hidden">
+          <div class="overlay-inspiration"></div>
+          <h2 class="h2-inspiration">
+            Sydeny’s 10 most fashionable 5 star hotels
+          </h2>
+          <p class="p-inspiration">
             Browse the fastest growing tourism sector in the heart of Australia
             tourism capital ....
           </p>
         </article>
-        <article class="inspiration-article2">
-          <div class="overlay"></div>
-          <div class="h2-inspiration">
-            <h2>Top cities for Vegan Travellers</h2>
-          </div>
-          <p>
+        <article class="inspiration-article2 article4 hidden">
+          <div class="overlay-inspiration"></div>
+          <h2 class="h2-inspiration">Top cities for Vegan Travellers</h2>
+          <p class="p-inspiration">
             Top sites where you do not have to worry about being a vegan. Our
             tourist guide is here...
           </p>
         </article>
-        <article class="inspiration-article3">
-          <div class="overlay"></div>
-          <div class="h2-inspiration">
-            <h2>World’s top destinations during and post covid timeline</h2>
-          </div>
-          <p>
+        <article class="inspiration-article3 hidden">
+          <div class="overlay-inspiration"></div>
+          <h2 class="h2-inspiration">
+            World’s top destinations during and post covid timeline
+          </h2>
+          <p class="p-inspiration">
             Pandemic is still intact and will be here for a longer time. Here’s
             where your next destination...
           </p>
@@ -258,11 +427,12 @@
       <h1 class="popular-hotels-section-heading">Popular hotels</h1>
       <section class="popular-hotels-section">
         <!-- start of article 1 -->
-        <article class="popular-section-article1">
+        <article class="popular-section-article1 hidden">
           <img
             class="popular-section-article-img"
-            src="imgs/article1-section3.jpeg"
+            src="imgs/article1-section3.jpg"
             alt=""
+            loading="lazy"
           />
           <h2>Lakeside Motel Warefront</h2>
           <p>2246 properties</p>
@@ -270,11 +440,12 @@
         <!-- end of article 1 -->
         <!-- ------------------- -->
         <!-- start of article 2 -->
-        <article class="popular-section-article2">
+        <article class="popular-section-article2 hidden">
           <img
             class="popular-section-article-img"
-            src="imgs/article2-section3.jpeg"
+            src="imgs/article2-section3.jpg"
             alt=""
+            loading="lazy"
           />
           <h2>Recce Graham resort</h2>
           <p>1278 properties</p>
@@ -282,10 +453,10 @@
         <!-- end of article 2 -->
         <!-- ------------------- -->
         <!-- start of article 3 -->
-        <article class="popular-section-article3">
+        <article class="popular-section-article3 hidden">
           <img
             class="popular-section-article-img"
-            src="imgs/article3-section3.jpeg"
+            src="imgs/article3-section3.jpg"
             alt=""
           />
           <h2>Fireside Dinners</h2>
@@ -294,11 +465,12 @@
         <!-- end of article 3 -->
         <!-- ------------------- -->
         <!-- start of article 4 -->
-        <article class="popular-section-article4">
+        <article class="popular-section-article4 hidden">
           <img
             class="popular-section-article-img"
-            src="imgs/article4-section3.jpeg"
+            src="imgs/article4-section3.jpg"
             alt=""
+            loading="lazy"
           />
           <h2>Oculous Inn Stay</h2>
           <p>320 properties</p>
@@ -325,6 +497,7 @@
 
       <footer class="footer">
         <!-- start of footer lists -->
+
         <div class="nav-logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +512,6 @@
             />
           </svg>
           <h4 class="logo-title">Your home</h4>
-          <p>Your next goto companion for travel</p>
         </div>
 
         <!-- start of list1 -->
@@ -363,6 +535,7 @@
           <li><a>See more</a></li>
         </ul>
         <!-- end of list2 -->
+        
 
         <!-- start of list3 -->
         <ul>
@@ -389,38 +562,43 @@
       </footer>
     </main>
     <!-- end of main -->
-    <div class="under-footer">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-      >
-        <g clip-path="url(#clip0_4_1207)">
-          <path
-            d="M8.00016 14.6667C4.32016 14.6667 1.3335 11.68 1.3335 8C1.3335 4.32 4.32016 1.33333 8.00016 1.33333C11.6802 1.33333 14.6668 4.32 14.6668 8C14.6668 11.68 11.6802 14.6667 8.00016 14.6667Z"
-            stroke="#4F4F4F"
-            stroke-width="1.2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M9.92032 10C9.43417 10.4287 8.80851 10.6657 8.16032 10.6667C6.68699 10.6667 5.49365 9.47333 5.49365 8C5.49365 6.52666 6.68699 5.33333 8.16032 5.33333C8.80851 5.33426 9.43417 5.57125 9.92032 5.99999"
-            stroke="#4F4F4F"
-            stroke-width="1.2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_4_1207">
-            <rect width="16" height="16" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-      <p>my Dream Place 2022</p>
+    <div class="container-down-banner">
+      <div class="under-footer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_4_1207)">
+            <path
+              d="M8.00016 14.6667C4.32016 14.6667 1.3335 11.68 1.3335 8C1.3335 4.32 4.32016 1.33333 8.00016 1.33333C11.6802 1.33333 14.6668 4.32 14.6668 8C14.6668 11.68 11.6802 14.6667 8.00016 14.6667Z"
+              stroke="#4F4F4F"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.92032 10C9.43417 10.4287 8.80851 10.6657 8.16032 10.6667C6.68699 10.6667 5.49365 9.47333 5.49365 8C5.49365 6.52666 6.68699 5.33333 8.16032 5.33333C8.80851 5.33426 9.43417 5.57125 9.92032 5.99999"
+              stroke="#4F4F4F"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_4_1207">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <p>my Dream Place 2022</p>
+      </div>
     </div>
+
+    <script src="home.js"></script>
+    <script src="commonFeatures.js"></script>
   </body>
   <!-- end of body -->
 </html>

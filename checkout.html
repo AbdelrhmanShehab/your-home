@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="media-query.css" />
+    <link rel="icon" href="imgs/home-tab.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout to confirm booking" />
+    <title>Checkout</title>
+  </head>
+  <body class="body-for-checkout">
+    <header>
+      <nav class="header-loged-in-nav">
+        <div class="nav-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+              fill="#2f80ed"
+            />
+          </svg>
+          <h4 class="logo-title">Your home</h4>
+        </div>
+        <div class="nav-links">
+          <ul class="nav-links-loged-in">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="">Discover</a></li>
+            <li class="nav-link"><a href="">Activties</a></li>
+            <li class="nav-link"><a href="">About</a></li>
+            <li class="nav-link"><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="notifications-profile-photo">
+          <svg
+            class="notifications-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M19.3399 14.49L18.3399 12.83C18.1299 12.46 17.9399 11.76 17.9399 11.35V8.82004C17.9387 7.70407 17.6216 6.61125 17.0252 5.66801C16.4288 4.72477 15.5776 3.96966 14.5699 3.49004C14.3128 3.03338 13.9376 2.65418 13.4838 2.39207C13.0299 2.12997 12.514 1.99457 11.9899 2.00004C10.8999 2.00004 9.91994 2.59004 9.39994 3.52004C7.44994 4.49004 6.09994 6.50004 6.09994 8.82004V11.35C6.09994 11.76 5.90994 12.46 5.69994 12.82L4.68994 14.49C4.28994 15.16 4.19994 15.9 4.44994 16.58C4.68994 17.25 5.25994 17.77 5.99994 18.02C7.93994 18.68 9.97994 19 12.0199 19C14.0599 19 16.0999 18.68 18.0399 18.03C18.7399 17.8 19.2799 17.27 19.5399 16.58C19.7999 15.89 19.7299 15.13 19.3399 14.49Z"
+              fill="#BDBDBD"
+            />
+            <path
+              d="M14.8302 20.01C14.6199 20.5922 14.2355 21.0954 13.7291 21.4515C13.2228 21.8075 12.6191 21.999 12.0002 22C11.2102 22 10.4302 21.68 9.88018 21.11C9.56018 20.81 9.32018 20.41 9.18018 20C9.31018 20.02 9.44018 20.03 9.58018 20.05C9.81018 20.08 10.0502 20.11 10.2902 20.13C10.8602 20.18 11.4402 20.21 12.0202 20.21C12.5902 20.21 13.1602 20.18 13.7202 20.13C13.9302 20.11 14.1402 20.1 14.3402 20.07L14.8302 20.01Z"
+              fill="#BDBDBD"
+            />
+            <circle
+              cx="17"
+              cy="6"
+              r="5"
+              fill="#EB5757"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+          <img
+            class="user-profile-photo-nav"
+            src="imgs/user-profile-photo.png"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container-checkout">
+      <h1>Secure your reservation</h1>
+      <div class="covid-footer-container">
+        <div class="covid-restrictions-warning-checkout">
+          <svg
+            class="warning-covid-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              d="M16 12V18.6667"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.0001 28.5468H7.92007C3.29341 28.5468 1.36007 25.2401 3.60007 21.2001L7.76007 13.7068L11.6801 6.66679C14.0534 2.38679 17.9467 2.38679 20.3201 6.66679L24.2401 13.7201L28.4001 21.2135C30.6401 25.2535 28.6934 28.5601 24.0801 28.5601H16.0001V28.5468Z"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.9932 22.6667H16.0052"
+              stroke="#292D32"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="covid-text">
+            Check the latest COVID-19 restrictions before you travel.
+            <span class="span-covid-text">Learn more </span>
+          </p>
+        </div>
+      </div>
+      <div class="check-out-flex">
+        <div>
+          <div class="room-personal-info">
+            <div class="room-info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+              >
+                <path
+                  d="M21.5835 4.79496L15.7618 2.61329C14.7935 2.25162 13.2068 2.25162 12.2385 2.61329L6.41685 4.79496C5.07518 5.29662 3.97852 6.88329 3.97852 8.30662V16.975C3.97852 18.3516 4.88852 20.16 5.99685 20.9883L11.0135 24.7333C12.6585 25.97 15.3652 25.97 17.0102 24.7333L22.0268 20.9883C23.1352 20.16 24.0452 18.3516 24.0452 16.975V8.30662C24.0218 6.88329 22.9252 5.29662 21.5835 4.79496ZM13.9185 8.20162C15.2952 8.20162 16.4152 9.32162 16.4152 10.6983C16.4152 12.0516 15.3535 13.1366 14.0118 13.1833H13.8952C12.4952 13.1366 11.4452 12.0516 11.4452 10.6983C11.4335 9.32162 12.5535 8.20162 13.9185 8.20162ZM16.5552 19.0866C15.8435 19.5533 14.9218 19.7983 14.0002 19.7983C13.0785 19.7983 12.1452 19.565 11.4452 19.0866C10.7802 18.6433 10.4185 18.0366 10.4068 17.3716C10.4068 16.7183 10.7802 16.0883 11.4452 15.645C12.8568 14.7116 15.1552 14.7116 16.5668 15.645C17.2318 16.0883 17.6052 16.695 17.6052 17.36C17.5935 18.0133 17.2202 18.6433 16.5552 19.0866Z"
+                  fill="white"
+                />
+              </svg>
+              <h3>Room 1</h3>
+              <p>2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
+            </div>
+            <form>
+              <label
+                class="label-first-checkout"
+                for="checkout-input-first-name"
+              >
+                First name <br />
+                <input class="checkout-input-first-name" type="text" />
+              </label>
+              <label class="label-last-checkout" for="last-name-checkout">
+                Last name <br />
+                <input class="checkout-input" type="text" />
+              </label>
+              <p class="label-countries-code">Mobile number</p>
+              <div class="dropdown-countries-code">
+                <div class="country-code">
+                  <img
+                    class="default-country-code-img"
+                    src="imgs/egypt-flag.svg"
+                    alt=""
+                  />
+                  <p class="default-country-code">+02</p>
+                </div>
+                <div class="options-country-code">
+                  <ul class="countries-codes-list">
+                    <li class="country-code-op1">
+                      <img src="imgs/egypt-flag.svg" alt="" />
+                      <p>+02</p>
+                    </li>
+                    <li class="country-code-op2">
+                      <img src="imgs/plastine-flag.svg" alt="" />
+                      <p>+970</p>
+                    </li>
+                    <li class="country-code-op3">
+                      <img src="imgs/indonsia-flag.svg" alt="" />
+                      <p>+62</p>
+                    </li>
+                    <li class="country-code-op4">
+                      <img src="imgs/qatar-flag.svg" alt="" />
+                      <p>+974</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <input class="phone-number-input" type="text" />
+            </form>
+            <div class="flex-alert">
+              <div class="alert-checkbox"></div>
+              <p class="alert-text">Receive text alerts about this trip.</p>
+            </div>
+          </div>
+          <!-- end of room info box -->
+
+          <div class="flex-btns">
+            <button class="pay-visa-btn">Paying with VISA?</button>
+            <div class="line-between-visa-cash"></div>
+            <button class="pay-cash-btn">Paying with CASH?</button>
+          </div>
+
+          <div class="payment-options-box">
+            <div class="payment-info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+              >
+                <path
+                  d="M22.1667 17.5C19.5883 17.5 17.5 19.5883 17.5 22.1667C17.5 23.0417 17.745 23.87 18.1767 24.57C18.588 25.2612 19.1722 25.8335 19.8718 26.2303C20.5714 26.6272 21.3623 26.835 22.1667 26.8333C23.87 26.8333 25.3517 25.9233 26.1567 24.57C26.5883 23.87 26.8333 23.0417 26.8333 22.1667C26.8333 19.5883 24.745 17.5 22.1667 17.5ZM24.5817 21.665L22.0967 23.9633C21.9333 24.115 21.7117 24.1967 21.5017 24.1967C21.28 24.1967 21.0583 24.115 20.8833 23.94L19.7283 22.785C19.5656 22.6203 19.4743 22.3982 19.4743 22.1667C19.4743 21.9352 19.5656 21.713 19.7283 21.5483C20.0667 21.21 20.6267 21.21 20.965 21.5483L21.525 22.1083L23.3917 20.3817C23.7417 20.055 24.3017 20.0783 24.6283 20.4283C24.955 20.7783 24.9317 21.3267 24.5817 21.665Z"
+                  fill="white"
+                />
+                <path
+                  d="M25.6668 8.80602V9.33102C25.6668 9.97269 25.1418 10.4977 24.5002 10.4977H3.50016C2.8585 10.4977 2.3335 9.97269 2.3335 9.33102V8.79436C2.3335 6.12269 4.49183 3.96436 7.1635 3.96436H20.8252C23.4968 3.96436 25.6668 6.13436 25.6668 8.80602Z"
+                  fill="white"
+                />
+                <path
+                  d="M2.3335 13.4144V19.2011C2.3335 21.8728 4.49183 24.0311 7.1635 24.0311H14.4668C15.1435 24.0311 15.7268 23.4594 15.6685 22.7828C15.5052 20.9978 16.0768 19.0611 17.6635 17.5211C18.3168 16.8794 19.1218 16.3894 19.9968 16.1094C21.4552 15.6428 22.8668 15.7011 24.1152 16.1211C24.2907 16.1824 24.4783 16.201 24.6624 16.1751C24.8465 16.1493 25.0217 16.0798 25.1735 15.9725C25.3253 15.8652 25.4493 15.7232 25.5351 15.5583C25.6209 15.3934 25.6661 15.2103 25.6668 15.0244V13.4028C25.6668 12.7611 25.1418 12.2361 24.5002 12.2361H3.50016C2.8585 12.2478 2.3335 12.7728 2.3335 13.4144ZM9.3335 20.1228H7.00016C6.52183 20.1228 6.12516 19.7261 6.12516 19.2478C6.12516 18.7694 6.52183 18.3728 7.00016 18.3728H9.3335C9.81183 18.3728 10.2085 18.7694 10.2085 19.2478C10.2085 19.7261 9.81183 20.1228 9.3335 20.1228Z"
+                  fill="white"
+                />
+              </svg>
+              <h3>Payment options</h3>
+            </div>
+            <div class="filter-payment-optioins">
+              <div class="filter-button">Debit/Credit Card</div>
+              <div class="filter-button">Paypal</div>
+              <div class="filter-button">Bank transfer</div>
+            </div>
+            <div class="visa-icons-boxes">
+              <div class="visa-icon-box">
+                <img src="imgs/visa1.png" alt="" />
+              </div>
+              <div class="visa-icon-box">
+                <img src="imgs/visa-2.png" alt="" />
+              </div>
+              <div class="visa-icon-box">
+                <img src="imgs/visa-3.png" alt="" />
+              </div>
+              <div class="visa-icon-box">
+                <img src="imgs/visa-4.png" alt="" />
+              </div>
+            </div>
+            <form class="form-payment">
+              <label class="label-countries-code" for="name-on-card-input">
+                Name on card
+                <br />
+                <input class="name-on-card-input" type="text" />
+              </label>
+              <label class="label-debit-card" for="debit-card-input">
+                Debit/Credit card number
+                <br />
+                <input class="name-on-card-input" type="text" />
+              </label>
+              <div class="expiration-date">
+                <div class="dropdown-countries-code">
+                  <p>Month</p>
+                </div>
+                <div class="dropdown-countries-code">
+                  <p>Year</p>
+                </div>
+              </div>
+              <div class="security-zip-code">
+                <label class="label-security-code" for="security-code-input">
+                  Security Code
+                  <input class="security-code-input" type="text" />
+                </label>
+
+                <label class="label-zip-code" for="zip-code-input">
+                  Billing Zip code
+                  <input class="zip-code-input" type="text" />
+                </label>
+              </div>
+            </form>
+            <!-- end of visa boxes -->
+          </div>
+          <!-- end of second box payment options -->
+          <div class="yellow-information">
+            <div class="yellow-information-heading">
+              <p>Important information about your booking</p>
+            </div>
+            <ul>
+              <li>
+                This rate is non-refundable. If you change or cancel your
+                booking you will not get a refund or credit to use for a future
+                stay.
+              </li>
+              <li>
+                This rate is non-refundable. If you change or cancel your
+                booking you will not get a refund or credit to use for a future
+                stay.
+              </li>
+              <li>Front desk staff will greet guests on arrival</li>
+              <li>
+                No refunds will be issued for late check-in or early check-out.
+              </li>
+            </ul>
+            <p class="warning-yello-box">
+              By clicking the button below, I acknowledge that I have reviewed
+              the
+              <span class="span-covid-text">Privacy Statement</span> and have
+              reviewd and accept the Rules and Restrictions and
+              <span class="span-covid-text">Terms of Use</span>.
+            </p>
+            <form action="thank-you.html">
+              <a href="thank-you.html"
+                ><button class="complete-booking" onclick="passForgotEmail();">
+                  Complete Booking
+                </button></a
+              >
+            </form>
+
+            <script>
+              function passForgotEmail() {
+                let emailForgot = document.querySelector(
+                  ".checkout-input-first-name"
+                ).value;
+                localStorage.setItem("passData", emailForgot);
+                return false;
+              }
+            </script>
+
+            <div class="secure-text-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 7.75C10.11 7.75 9.75 8.54 9.75 10V10.62H14.25V10C14.25 8.54 13.89 7.75 12 7.75Z"
+                  fill="#219653"
+                />
+                <path
+                  d="M11.9979 15.0979C12.2897 15.0979 12.5695 14.9821 12.7758 14.7758C12.9821 14.5695 13.0979 14.2897 13.0979 13.9979C13.0979 13.7062 12.9821 13.4264 12.7758 13.2201C12.5695 13.0138 12.2897 12.8979 11.9979 12.8979C11.7062 12.8979 11.4264 13.0138 11.2201 13.2201C11.0138 13.4264 10.8979 13.7062 10.8979 13.9979C10.8979 14.2897 11.0138 14.5695 11.2201 14.7758C11.4264 14.9821 11.7062 15.0979 11.9979 15.0979Z"
+                  fill="#219653"
+                />
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17.38 14.5C17.38 16.7 16.7 17.38 14.5 17.38H9.5C7.3 17.38 6.62 16.7 6.62 14.5V13.5C6.62 11.79 7.03 11 8.25 10.73V10C8.25 9.07 8.25 6.25 12 6.25C15.75 6.25 15.75 9.07 15.75 10V10.73C16.97 11 17.38 11.79 17.38 13.5V14.5Z"
+                  fill="#219653"
+                />
+              </svg>
+              <p>
+                We use secure transmission and encrypted storage to protect your
+                personal information
+              </p>
+            </div>
+          </div>
+          <!-- end of yello box class -->
+        </div>
+        <div>
+          <div class="aside-checkout-hotel-card">
+            <img src="imgs/hotel-card7.jpg" alt="" />
+            <h2>Lakeside Motel Warefront</h2>
+            <div class="five-stars-checkout">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_4_2691)">
+                  <path
+                    d="M9.99995 14.1666L5.10162 17.1583L6.43328 11.5749L2.07495 7.84159L7.79578 7.38325L9.99995 2.08325L12.2041 7.38325L17.9258 7.84159L13.5666 11.5749L14.8983 17.1583L9.99995 14.1666Z"
+                    fill="#F2994A"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_2691">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_4_2691)">
+                  <path
+                    d="M9.99995 14.1666L5.10162 17.1583L6.43328 11.5749L2.07495 7.84159L7.79578 7.38325L9.99995 2.08325L12.2041 7.38325L17.9258 7.84159L13.5666 11.5749L14.8983 17.1583L9.99995 14.1666Z"
+                    fill="#F2994A"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_2691">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_4_2691)">
+                  <path
+                    d="M9.99995 14.1666L5.10162 17.1583L6.43328 11.5749L2.07495 7.84159L7.79578 7.38325L9.99995 2.08325L12.2041 7.38325L17.9258 7.84159L13.5666 11.5749L14.8983 17.1583L9.99995 14.1666Z"
+                    fill="#F2994A"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_2691">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_4_2691)">
+                  <path
+                    d="M9.99995 14.1666L5.10162 17.1583L6.43328 11.5749L2.07495 7.84159L7.79578 7.38325L9.99995 2.08325L12.2041 7.38325L17.9258 7.84159L13.5666 11.5749L14.8983 17.1583L9.99995 14.1666Z"
+                    fill="#F2994A"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_2691">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_4_2691)">
+                  <path
+                    d="M9.99995 14.1666L5.10162 17.1583L6.43328 11.5749L2.07495 7.84159L7.79578 7.38325L9.99995 2.08325L12.2041 7.38325L17.9258 7.84159L13.5666 11.5749L14.8983 17.1583L9.99995 14.1666Z"
+                    fill="#F2994A"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_2691">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>4.5 (1200 Reviews)</p>
+            </div>
+            <p class="red-text-card">Non refundable</p>
+            <p class="check-in-card-checkout">
+              Check in: Sunday, March 18, 2022
+            </p>
+            <p class="check-out-card-checkout">
+              Check out: Tuesday, March 20, 2022
+            </p>
+            <p class="nights-staying-card-checkout">2 night stay</p>
+          </div>
+          <!-- end of card hotel aside -->
+          <div class="price-details-aside-checkout">
+            <div class="price-details-aside-checkout-heading">
+              <h2>Price Details</h2>
+            </div>
+            <p class="no-rooms-price-details">1 room X 2 nights</p>
+            <p class="no-rooms-price">$ 120.32</p>
+            <p class="tax-price-details">Tax and service fees</p>
+            <p class="tax-price">$ 8.32</p>
+            <div class="line-price-deatils-checkout"></div>
+            <p class="total-price-details">Total</p>
+            <p class="price-price-details">$130</p>
+            <p class="promo-cpde-price-details">
+              Use a coupon, credit or promotional code
+            </p>
+            <div class="coupon-apply">
+              <label class="label-coupon" for="coupon-input">
+                Coupon code
+                <input class="coupon-input" type="text" />
+              </label>
+              <button>ApplyCoupon</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end of main container -->
+    <!-- javascript link -->
+    <script src="checkout.js"></script>
+  </body>
+</html>
