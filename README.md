@@ -19,9 +19,9 @@ This is a travel booking website developed using only pure HTML, CSS, and JavaSc
 * new password page
 - Check inbox page
 + Checkout page
-+ 
+  
 ### UX Design
-UX Design - Figma Link
+[UX Design - Figma Link](https://www.figma.com/proto/T82Dqwb76ikyz9teGBiFLl/Traveler-And-Booking-UI-Kits-(Community)?node-id=4-1095&starting-point-node-id=4%3A1095)
 
 ## Final result
 Website Video Run [Video](https://drive.google.com/drive/u/1/home)
